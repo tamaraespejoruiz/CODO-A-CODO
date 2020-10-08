@@ -1,0 +1,11 @@
+.bd-placeholder-img {
+    font-size: 1.150rem;
+    text-anchor: middle;
+}
+
+@media (min-width: 790px) {
+  .bd-placeholder-img-lg {
+  font-size: 3.5rem;
+  }
+}
+

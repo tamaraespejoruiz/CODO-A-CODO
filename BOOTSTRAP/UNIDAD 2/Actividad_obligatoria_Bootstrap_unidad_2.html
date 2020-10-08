@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Actividad obligatoria Bootstrap - Unidad 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #F9F9F9;">
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nombreDePila" class="mr-md-2">Nombre de pila</label>
+                    <input type="text" class="form-control" id="nombreDePila" name="nombreDePila" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="apellido" class="mr-md-2">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" id="apellido" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nombreDeUsuario">Nombre de usuario</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                <input type="text" class="form-control" id="nombreDeUsuario" name="nombreDeUsuario" placeholder="Nombre de usuario" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo electr&oacute;nico <small class="text-muted">(opcional)</small></label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+                <label for="direccion1">Habla a</label>
+                <input type="text" class="form-control" id="direccion1" name="direccion1" placeholder="1234 Main St" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion2">Direcci&oacute;n 2 <small class="text-muted">(opcional)</small></label>
+                <input type="text" class="form-control" id="direccion2" name="direccion2" placeholder="Apartamento o suite">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="pais">Pa&iacute;s</label>
+                    <select class="custom-select mr-sm-2" name="paises" id="paises" required>
+                        <option selected>Escoger...</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="estado">Estado</label>
+                    <select class="custom-select mr-sm-2" name="estados" id="estados" required>
+                        <option selected>Escoger...</option>
+                        <!--<option value="Argentina">Argentina</option>-->
+                        <!--<option value="Brasil">Brasil</option>-->
+                        <!--<option value="Colombia">Colombia</option>-->
+                        <!--<option value="Mexico">Mexico</option>-->
+                        <!--<option value="Peru">Peru</option>-->
+                        <!--<option value="Venezuela">Venezuela</option>-->
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="codigoPostal">C&oacute;digo Postal</label>
+                    <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" required>
+                </div>
+            </div>
+            <hr>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox">
+                <label class="form-check-label" for="checkbox">La direcci&oacute;n de env&iacute;o es la misma que mi direcci&oacute;n de facturaci&oacute;n</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" value="" type="checkbox" name="checkbox2" id="checkbox2">
+                <label class="form-check-label" value="" for="checkbox2">Guarde esta informaci&oacute;n para la pr&oacute;xima vez</label>
+            </div>
+            <hr>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
